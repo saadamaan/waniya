@@ -368,7 +368,7 @@ footer {
 
 
 /* Responsive Styling for 270px to 360px */
-@media only screen and (min-width: 270px) and (max-width: 360px) {
+@media only screen and (min-width: 220px) and (max-width: 360px) {
   /* Body and General Adjustments */
   body {
     font-size: 6px; /* Smaller font size for better readability */

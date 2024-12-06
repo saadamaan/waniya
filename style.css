@@ -367,8 +367,8 @@ footer {
 }
 
 
-/* Responsive Styling for 270px to 360px */
-@media only screen and (min-width: 170px) and (max-width: 360px) {
+/* Responsive Styling for 220px to 360px */
+@media only screen and (min-width: 220px) and (max-width: 360px) {
   /* Body and General Adjustments */
   body {
     font-size: 6px; /* Smaller font size for better readability */
@@ -533,3 +533,171 @@ footer {
     padding: 10px;
   }
 }
+
+/* Responsive Styling for 220px to 360px */
+@media only screen and (min-width: 120px) and (max-width: 220px) {
+  /* Body and General Adjustments */
+  body {
+    font-size: 6px; /* Smaller font size for better readability */
+  }
+
+  h1, h2 {
+    font-size: 16px; /* Reduce headings size */
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 14px; /* Adjust subheading size */
+  }
+
+  p {
+    font-size: 12px; /* Adjust paragraph size */
+  }
+
+  /* Top Navigation */
+  .top-nav {
+    padding: 1px 1px; /* Smaller padding for even more compact size */
+  }
+
+  .top-nav .artist-name {
+    font-size: 6px; /* Further reduced font size */
+  }
+
+  .contact-info a {
+    font-size: 4px; /* Minimized font size */
+  }
+
+  /* Main Navigation */
+  .main-nav ul li a {
+    font-size: 6px; /* Further reduced font size for nav links */
+    padding: 2px 0; /* Smaller padding */
+  }
+
+  /* Hero Section */
+  .hero {
+    flex-direction: row; /* Arrange text and image in one row */
+    align-items: center; /* Vertically align items */
+    text-align: left; /* Align text to the left */
+    padding: 5px; /* Compact padding */
+  }
+
+  .hero-content {
+    margin: 0 8px; /* Space between text and image */
+  }
+
+  .hero-content h1 {
+    font-size: 10px; /* Smaller hero title */
+    margin: 5px 0;
+  }
+
+  .hero-content p {
+    font-size: 6px; /* Reduced font size for description */
+    margin: 5px 0;
+  }
+
+  .hero-image img {
+    max-width: 60px; /* Smallest image size */
+    border: 1px solid #4B8F5B; /* Thin border for smaller image */
+  }
+
+  /* Background Image Settings */
+  .hero {
+    background-size: cover; /* Scale background image to fit */
+    background-position: center; /* Center-align background */
+    background-repeat: no-repeat; /* Avoid image repetition */
+  }
+
+  /* About Section */
+  #about {
+    padding: 20px;
+  }
+
+  .about-container {
+    flex-direction: column; /* Stack content vertically */
+    text-align: center;
+  }
+
+  .about-text {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .about-text h2 {
+    font-size: 15px;
+  }
+
+  .about-text p {
+    font-size: 12px;
+  }
+
+  .about-image img {
+    max-width: 120px; /* Smaller image */
+  }
+
+  /* Gallery Section */
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr; /* 2 images per row */
+  }
+
+  .gallery-item img {
+    height: 120px; /* Smaller image height */
+  }
+
+  /* Services Section */
+  .service-gallery {
+    grid-template-columns: 1fr 1fr; /* 2 cards per row */
+  }
+
+  .service-card {
+    padding: 5px;
+  }
+
+  .service-card img {
+    height: 120px; /* Smaller card image */
+  }
+
+  /* Why Us Section */
+  #whyus {
+    padding: 15px;
+  }
+
+  .whyus-list {
+    display: flex; /* Enable flexbox */
+    flex-wrap: wrap; /* Allow items to wrap to next line */
+    gap: 13px; /* Space between the items */
+    justify-content: space-between; /* Distribute items with space between them */
+  }
+
+  .whyus-item {
+    flex: 1 1 48%; /* Set each item to take up 48% of the width, ensuring two items per row */
+    margin: 10px 0; /* Adjust margin if needed */
+  }
+
+  /* Contact Section */
+  .contact {
+    padding: 20px;
+  }
+
+  form {
+    gap: 5px; /* Reduce spacing */
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  form input, form textarea, form button {
+    width: 80%; /* Smaller form elements */
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  form button {
+    padding: 8px;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+

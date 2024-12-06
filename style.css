@@ -1,0 +1,535 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F9F5EC; /* Creamy Beige */
+  color: #4E342E; /* Dark Brown */
+  line-height: 1.6;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4B8F5B; /* Henna Green */
+}
+
+h3 {
+  text-align:left;
+  margin-left: 20px;
+  color: #4B8F5B; /* Henna Green */
+}
+
+p {
+  margin: 0 20px;
+  text-align: center;
+  color: #4E342E; /* Dark Brown */
+}
+
+/* Top Navigation */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #4B8F5B; /* Henna Green */
+  color: white;
+}
+
+
+.top-nav .contact-info span {
+  margin-right: 15px;
+}
+
+
+.top-nav .artist-name {
+  font-weight: bold;
+  font-size: 18px;
+
+}
+
+
+.contact-info a {
+  text-decoration: none;
+  color: #faf5f7; /* Instagram's magenta color */
+  transition: color 0.3s;
+  font-size: 12px;
+}
+
+.contact-info a:hover {
+  color: #E1306C; /* Darker Instagram magenta on hover */
+}
+
+
+
+/* Main Navigation Bar */
+.main-nav {
+  background-color: #4B8F5B; /* Henna Green */
+  padding: 10px 0;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between; /* Ensures even spacing between items */
+  align-items: center; /* Centers items vertically */
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Makes the navigation bar full-width */
+}
+
+.main-nav ul li {
+  flex-grow: 1; /* Makes each <li> take up an equal amount of space */
+  text-align: center; /* Centers the text within each <li> */
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  width: 100%; /* Ensures the clickable area spans the entire width of the <li> */
+  padding: 10px 0; /* Adds vertical padding for better spacing */
+}
+
+.main-nav ul li a:hover {
+  color: #E57A44; /* Burnt Orange */
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  background-image: url('image/bg.png'); /* Add the background image */
+  background-size:cover;
+  background-position: center;
+  background-attachment: fixed; /* Optional: Makes the background image stay fixed while scrolling */
+  background-color: rgba(249, 245, 236, 0.8); /* Lighter Beige with transparency */
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Black with low opacity for better text visibility */
+  z-index: -1; /* Makes sure the overlay is behind the text */
+}
+
+.hero-content {
+  flex: 1;
+  margin-right: 240px; /* Adds spacing between content and image */
+}
+
+.hero-content h1, .hero-content p {
+  animation: fadeIn 2s ease-in-out;
+  color: #50e873; /* Henna Green */
+  margin-left: 60px;
+}
+
+.hero-image {
+  flex: 1; /* Ensures proper layout balancing */
+  text-align: right; /* Aligns image to the right */
+}
+
+.hero-image img {
+  max-width: 250px; /* Resized image */
+  border-radius: 10px;
+  border: 3px solid #4B8F5B; /* Henna Green */
+}
+
+
+/* About Section */
+.about {
+  padding: 50px 20px;
+  background: rgba(249, 245, 236, 0.8); /* Creamy Beige */
+  color: #4E342E; /* Dark Brown */
+}
+
+/* Gallery Section */
+.gallery {
+  padding: 50px 20px;
+  background-color: #FFF8E1; /* Light Gold */
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 300px; /* Set a fixed height for all images */
+  object-fit: cover; /* Ensures the image scales proportionally without distortion */
+  border-radius: 8px;
+  transition: transform 0.3s;
+  border: 3px solid #C7A647; /* Gold */
+  margin-left: 10px;
+
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+  border-color: #4B8F5B; /* Henna Green */
+}
+
+/* Services Section */
+.services {
+  padding: 50px 20px;
+  background: rgba(249, 245, 236, 0.8); /* Creamy Beige */
+}
+
+.service-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  text-align: center;
+  border: 1px solid #C7A647; /* Gold */
+  border-radius: 10px;
+  padding: 10px;
+  background: #FFF8E1; /* Light Gold */
+}
+
+.service-card img {
+  width: 100%;
+  height: 300px; /* Set a fixed height for all images */
+  object-fit: cover; /* Ensures the image scales proportionally without distortion */
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.service-card img:hover {
+  transform: scale(1.1);
+}
+
+.service-card h3 {
+  margin-top: 10px;
+  color: #4B8F5B; /* Henna Green */
+} 
+
+
+/* Contact Section */
+.contact {
+  padding: 50px 20px;
+  background-color: #F9F5EC; /* Creamy Beige */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items:left;
+  gap: 10px;
+  margin-left:15px;
+}
+
+form input, form textarea, form button {
+  width: 80%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #C7A647; /* Gold */
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #4B8F5B; /* Henna Green */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+form button:hover {
+  background-color: #E57A44; /* Burnt Orange */
+  transform: scale(1.1);
+}
+/* Footer */
+footer {
+  background-color: #4B8F5B; /* Henna Green */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+#whyus {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f9f5ec;
+}
+
+#whyus h3 {
+  font-size: 28px;
+  color: #4B8F5B;
+  margin-bottom: 20px;
+}
+
+.whyus-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.whyus-item {
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.whyus-item i {
+  font-size: 24px;
+  color: #E57A44;
+  margin-bottom: 10px;
+}
+
+.whyus-item p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+#about {
+  background-color: #f9f5ec;
+  padding: 40px;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-text {
+  flex: 1;
+  max-width: 800px;
+  margin-right: 20px;
+}
+
+.about-text h2 {
+  font-size: 32px;
+  color: #4B8F5B;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.about-text p strong {
+  color: #E57A44; /* Highlight key phrases in burnt orange */
+}
+
+.about-image {
+  flex: 1;
+  max-width: 250px;
+  text-align: center;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Responsive Styling for 270px to 360px */
+@media only screen and (min-width: 270px) and (max-width: 360px) {
+  /* Body and General Adjustments */
+  body {
+    font-size: 6px; /* Smaller font size for better readability */
+  }
+
+  h1, h2 {
+    font-size: 18px; /* Reduce headings size */
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 16px; /* Adjust subheading size */
+  }
+
+  p {
+    font-size: 14px; /* Adjust paragraph size */
+  }
+
+  /* Top Navigation */
+  .top-nav {
+    padding: 1px 1px; /* Smaller padding for even more compact size */
+  }
+
+  .top-nav .artist-name {
+    font-size: 8px; /* Further reduced font size */
+  }
+
+  .contact-info a {
+    font-size: 4px; /* Minimized font size */
+  }
+
+  /* Main Navigation */
+  .main-nav ul li a {
+    font-size: 8px; /* Further reduced font size for nav links */
+    padding: 2px 0; /* Smaller padding */
+  }
+
+  /* Hero Section */
+  .hero {
+    flex-direction: row; /* Arrange text and image in one row */
+    align-items: center; /* Vertically align items */
+    text-align: left; /* Align text to the left */
+    padding: 5px; /* Compact padding */
+  }
+
+  .hero-content {
+    margin: 0 10px; /* Space between text and image */
+  }
+
+  .hero-content h1 {
+    font-size: 12px; /* Smaller hero title */
+    margin: 5px 0;
+  }
+
+  .hero-content p {
+    font-size: 8px; /* Reduced font size for description */
+    margin: 5px 0;
+  }
+
+  .hero-image img {
+    max-width: 80px; /* Smallest image size */
+    border: 1px solid #4B8F5B; /* Thin border for smaller image */
+  }
+
+  /* Background Image Settings */
+  .hero {
+    background-size: cover; /* Scale background image to fit */
+    background-position: center; /* Center-align background */
+    background-repeat: no-repeat; /* Avoid image repetition */
+  }
+
+  /* About Section */
+  #about {
+    padding: 20px;
+  }
+
+  .about-container {
+    flex-direction: column; /* Stack content vertically */
+    text-align: center;
+  }
+
+  .about-text {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .about-text h2 {
+    font-size: 20px;
+  }
+
+  .about-text p {
+    font-size: 14px;
+  }
+
+  .about-image img {
+    max-width: 120px; /* Smaller image */
+  }
+
+  /* Gallery Section */
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr; /* 2 images per row */
+  }
+
+  .gallery-item img {
+    height: 150px; /* Smaller image height */
+  }
+
+  /* Services Section */
+  .service-gallery {
+    grid-template-columns: 1fr 1fr; /* 2 cards per row */
+  }
+
+  .service-card {
+    padding: 5px;
+  }
+
+  .service-card img {
+    height: 150px; /* Smaller card image */
+  }
+
+  /* Why Us Section */
+  #whyus {
+    padding: 20px;
+  }
+
+  .whyus-list {
+    display: flex; /* Enable flexbox */
+    flex-wrap: wrap; /* Allow items to wrap to next line */
+    gap: 20px; /* Space between the items */
+    justify-content: space-between; /* Distribute items with space between them */
+  }
+
+  .whyus-item {
+    flex: 1 1 48%; /* Set each item to take up 48% of the width, ensuring two items per row */
+    margin: 10px 0; /* Adjust margin if needed */
+  }
+
+  /* Contact Section */
+  .contact {
+    padding: 20px;
+  }
+
+  form {
+    gap: 5px; /* Reduce spacing */
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  form input, form textarea, form button {
+    width: 90%; /* Smaller form elements */
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  form button {
+    padding: 8px;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
